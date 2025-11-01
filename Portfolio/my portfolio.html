@@ -3,22 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Vicky's Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Vicky</h1>
+  <h1 id="vicky">Vicky</h1>
 
-  <!-- Navigation Buttons -->
-  <div style="text-align:center; margin-bottom:20px;">
-    <button onclick="location.href='#welcome'">Welcome</button>
+  <nav style="text-align:center; margin-bottom:20px;">
     <button onclick="location.href='#about'">About Me</button>
     <button onclick="location.href='#projects'">My Projects</button>
-    <button onclick="location.href='#skills'">Technical Skills</button>
+    <button onclick="location.href='#skills'">My Skills</button>
     <button onclick="location.href='#contact'">Contact Me</button>
-  </div>
-
-
+  </nav>
 
   <h2 id="welcome">Welcome to My Portfolio</h2>
   <p>Hello! I am a web development student. This is my personal portfolio website.</p>
@@ -27,14 +23,7 @@
   <img src="https://png.pngtree.com/png-vector/20190710/ourlarge/pngtree-user-vector-avatar-png-image_1541962.jpg" width="200px" height="200px" alt="Profile avatar of Vicky">
   <p>I am passionate about learning web development and building creative projects.</p>
 
-  <h2 id="projects">My Projects</h2>
-  <ul>
-    <li><strong>Portfolio Website</strong>: A personal one-page website to showcase bio, skills, and contact details.</li>
-    <li><strong>Birthday Card</strong>: A creative greeting card webpage designed with HTML structure.</li>
-    <li><strong>User Form</strong>: A form webpage with fields like name, email, and message for practicing form handling.</li>
-  </ul>
-
-  <h2 id="skills">Technical Skills</h2>
+  <h2 id="skills">My Skills</h2>
   <table>
     <tr><th>Skill</th><th>Level</th></tr>
     <tr><td>HTML</td><td>Beginner</td></tr>
@@ -42,18 +31,37 @@
     <tr><td>JavaScript</td><td>Beginner</td></tr>
   </table>
 
+  <h2 id="projects">My Projects</h2>
+  
+    <p><strong>Portfolio Website</strong>: A personal one-page website to showcase bio, skills, and contact details.</p>
+    <img src="bio.png" class="project-img" alt="portfolio website">
+    <p><strong>Birthday Card</strong>: A creative greeting card webpage designed with HTML structure.</p>
+    <img src="birthdaywish.png" class="project-img" alt="birthday card">
+    
+  
+
   <h2 id="contact">Contact Me</h2>
   <form>
-    <label for="name">Name:</label>
-    <input type="text" id="name" placeholder="Enter your name"><br><br>
-
-    <label for="email">Email:</label>
-    <input type="email" id="email" placeholder="Enter your email"><br><br>
-
-    <label for="message">Message:</label><br>
-    <textarea id="message" placeholder="Enter your message"></textarea><br><br>
-
-    <button type="submit">Send</button>
+    <table>
+      <tr>
+        <td><label for="name">Name:</label></td>
+        <td><input type="text" id="name" name="name" placeholder="Enter your name"></td>
+      </tr>
+      <tr>
+        <td><label for="email">Email:</label></td>
+        <td><input type="email" id="email" name="email" placeholder="Enter your email"></td>
+      </tr>
+      <tr>
+        <td><label for="message">Message:</label></td>
+        <td><textarea id="message" name="message" placeholder="Enter your message"></textarea></td>
+      </tr>
+      <tr>
+        <td colspan="2" style="text-align:center;">
+          <button type="submit">Send</button>
+          <a href="#vicky" class="back-to-top">Back to Top</a>
+        </td>
+      </tr>
+    </table>
   </form>
 </body>
 </html>
